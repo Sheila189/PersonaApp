@@ -90,18 +90,18 @@ public class ServletPersona extends HttpServlet {
                         + "&status=" + result.getStatus();
                 break;
             case "/save-persona":
-                String name1 = request.getParameter("name");
-                String surname1 = request.getParameter("surname");
-                String curp1 = request.getParameter("curp");
-                String birthday1 = request.getParameter("birthday");
+                String name2 = request.getParameter("name");
+                String surname2 = request.getParameter("surname");
+                String curp2 = request.getParameter("curp");
+                String birthday2 = request.getParameter("birthday");
                 String id = request.getParameter("id");
 
                 BeanPersona persona1 = new BeanPersona();
-                persona1.setId(Long.parseLong(id));
-                persona1.setName(name1);
-                persona1.setSurname(surname1);
-                persona1.setCurp(curp1);
-                persona1.setBirthday(birthday1);
+                persona2.setId(Long.parseLong(id));
+                persona2.setName(name2);
+                persona2.setSurname(surname2);
+                persona2.setCurp(curp2);
+                persona2.setBirthday(birthday2);
                 ResultAction result2 = servicePersona.update(persona1);
 
                 urlRedirect = "/get-personas?result=" +

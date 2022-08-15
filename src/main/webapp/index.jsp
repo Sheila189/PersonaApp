@@ -18,7 +18,7 @@
         <div class="col align-middle">
             <div class="card position-absolute top-50 start-50 translate-middle" style= "width: 25%;" >
                 <div class="card-header" style="text-align: center">Menu</div>
-                <img src="${pageContext.request.contextPath}/img/eevee_guapo.jpg" style="margin: 15%">
+                <img src="${pageContext.request.contextPath}/img/CREEPY.png" style="margin: 15%">
                     <div class="form-group mb-3">
                         <div class="row">
                             <div class="col">

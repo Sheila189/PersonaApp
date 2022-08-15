@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-12">
             <div class="card mt-5">
-                <div class="card-header">ACTUALIZAR PERSONA</div>
+                <div class="card-header">ACTUALIZAR PERSONA</div> <!--Aqui podemos modificar los datos de la persona -->
                 <div class="card-body">
                     <div class="row">
                         <div class="col-12">
@@ -20,9 +20,9 @@
                                 <div class="form-group mb-3">
                                     <div class="row">
                                         <div class="col">
-                                            <label class="fw-bold" for="persona">Nombre</label>
+                                            <label class="fw-bold" for="persona">Nombre</label><!--Ingresa el nuevo nombre si asi lo desea -->
                                             <input name="name" id="persona" required
-                                                   class="form-control" value="${persona.name}"/>
+                                                   class="form-control" value="${persona.name}"/><!--Guarda el nombre de la persona y muestra el nombre que se registro en un principio -->
                                             <div class="invalid-feedback">
                                                 Campo obligatorio
                                             </div>
@@ -31,7 +31,7 @@
                                         <div class="col">
                                             <label class="fw-bold" for="surname">Surname</label>
                                             <input name="surname" id="surname" required
-                                                   class="form-control" value="${persona.surname}"/>
+                                                   class="form-control" value="${persona.surname}"/><!--Lo mismo que el nombre pero con el apellido -->
                                             <div class="invalid-feedback">
                                                 Campo obligatorio
                                             </div>
@@ -43,7 +43,7 @@
                                         <div class="col">
                                             <label class="fw-bold" for="curp">CURP</label>
                                             <input name="curp" id="curp" required
-                                                   class="form-control" value="${persona.curp}"/>
+                                                   class="form-control" value="${persona.curp}"/> <!--Es el mismo procedimiento pero aqui se guardara el curp del usuario -->
                                             <div class="invalid-feedback">
                                                 Campo obligatorio
                                             </div>
@@ -51,7 +51,7 @@
                                         <div class="col">
                                             <label class="fw-bold" for="birthday">Birthday</label>
                                             <input name="birthday" id="birthday" required
-                                                   class="form-control" type="date" value="${persona.birthday}"/>
+                                                   class="form-control" type="date" value="${persona.birthday}"/> <!--Guarda la fecha de nacimiento del usuario como tipo fecha -->
                                             <div class="invalid-feedback">
                                                 Campo obligatorio
                                             </div>

@@ -1,6 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -11,32 +12,27 @@
     <!-- Custom styles for this page -->
     <link href="/css/ingreso.css" rel="stylesheet">
 </head>
-
-<body>
+<body> <!--Cuerpo del menu donde se podra selleccionar si quieres crear o mostrar las personas creadas -->
 <div class="container-fluid">
     <div class="row">
         <div class="col align-middle">
             <div class="card position-absolute top-50 start-50 translate-middle" style= "width: 25%;" >
                 <div class="card-header" style="text-align: center">Menu</div>
                 <img src="${pageContext.request.contextPath}/img/eevee_guapo.jpg" style="margin: 15%">
-                <div class="card-body">
-                    <form action="login" method="post" class="needs-validation" novalidate>
-                        <button class="btn btn-outline-primary btn-sm col-md-12"
-                                type="submit" >Mostrar Personas Registradas
-                        </button>
-                        <button class="btn btn-outline-primary btn-sm col-md-12"
-                                type="submit">Crear Persona
-                        </button>
-                        <button class="btn btn-outline-primary btn-sm col-md-12"
-                                type="submit" >Editar Persona
-                        </button>
-                        <button class="btn btn-outline-primary btn-sm col-md-12"
-                                type="submit" >Elimina Persona
-                        </button>
-                        <div class="form-group mb-3 text-end" style="text-align: center">
-                            <a href="recover-password">¿Olvidaste tu contraseña?</a>
+                    <div class="form-group mb-3">
+                        <div class="row">
+                            <div class="col">
+                                <a href="/views/persona/index.jsp" class="btn btn-warning
+                                    btn-sm">Mostrar Personas Registradas</a>
+                                <!--Boton para mostrar la lista de personas registradas y de ahi poder seleccionar
+                                si queremos editar, crear o eliminar a un registro-->
+                            </div>
+                            <div class="col">
+                                <a href="/views/persona/create.jsp" class="btn btn-warning
+                                    btn-sm">Crear Persona</a> <!--Boton para crear persona -->
+                            </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

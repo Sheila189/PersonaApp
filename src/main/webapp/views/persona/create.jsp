@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-12">
             <div class="card mt-5">
-                <div class="card-header">REGISTRAR PERSONA</div>
+                <div class="card-header">REGISTRAR PERSONA</div><!--Formulario para la creacion de la persona en la BD -->
                 <div class="card-body">
                     <div class="row">
                         <div class="col-12">

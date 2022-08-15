@@ -18,7 +18,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-6">PERSONAS</div>
+                        <div class="col-6">PERSONAS</div> <!--Muestra el registro de las personas de la BD -->
                         <div class="col-6 text-end">
                             <a href="create-persona" class="btn btn-outline-success btn-sm">
                                 Registrar persona
@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <table class="table table-dark table-striped">
+                    <table class="table table-dark table-striped"><!--Los mostrara por orden de su id y de ahi mostrara los datos del usuario -->
                         <thead>
                         <th>#</th>
                         <th>Name</th>
